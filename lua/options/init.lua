@@ -6,6 +6,12 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.scriptencoding = "utf-8"
+
+-- vim.cmd [[let &shell = 'nu']]
+-- vim.cmd [[let &shell = '"C:/Program Files/nu/bin/.exe"']]
+-- Shell for toggleterm`
+vim.cmd [[let &shell = '"C:/Program Files/Git/usr/bin/bash.exe"']]
+vim.cmd [[let &shellcmdflag = '-s']]
 -- Map <leader>
 
 global.mapleader = " "

@@ -8,7 +8,7 @@ return require("packer").startup(function()
   use("nvim-telescope/telescope.nvim")
   use("rcarriga/nvim-notify")
   use("fladson/vim-kitty")
-  
+  use ("akinsho/toggleterm.nvim")
   use("startup-nvim/startup.nvim")
   use("EdenEast/nightfox.nvim") --> nightfox colorsceme for neovim
 	use("sainnhe/gruvbox-material")
