@@ -95,8 +95,6 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 					symlink_open = "",
 				},
 				git = {
-					unstaged = "U",
-					--	unstaged = "✗",
 					staged = "✓",
 					unmerged = "",
 					renamed = "➜",
@@ -155,8 +153,8 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 		enable = true,
 		show_on_dirs = true,
 		show_on_open_dirs = true,
-		disable_for_dirs = {},
-		timeout = 400,
+		disable_for_dirs = { ".git" },
+		timeout = 2400,
 	},
 	modified = {
 		enable = false,

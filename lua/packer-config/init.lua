@@ -1,7 +1,9 @@
 return require("packer").startup(function()
+	use("wbthomason/packer.nvim")
 	use("windwp/nvim-autopairs")
 	use("nvim-lua/plenary.nvim")
 	use("Pocco81/TrueZen.nvim")
+	use("norcalli/nvim-colorizer.lua")
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
 	use("lervag/vimtex")
@@ -10,6 +12,7 @@ return require("packer").startup(function()
 	use("fladson/vim-kitty")
 	use("akinsho/toggleterm.nvim")
 	use("startup-nvim/startup.nvim")
+	use("numToStr/Comment.nvim")
 	use("EdenEast/nightfox.nvim") --> nightfox colorsceme for neovim
 	use("sainnhe/gruvbox-material")
 	use("romgrk/barbar.nvim")
@@ -18,6 +21,7 @@ return require("packer").startup(function()
 		"nvim-lualine/lualine.nvim",
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
+	
 	--> treesitter & treesitter modules/plugins
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) --> treesitter
 	use("nvim-treesitter/nvim-treesitter-textobjects") --> textobjects
@@ -25,6 +29,7 @@ return require("packer").startup(function()
 	use("p00f/nvim-ts-rainbow")
 	use("nvim-treesitter/playground")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
+
 	--> lsp
 	use({ "williamboman/mason.nvim" })
 	use("williamboman/mason-lspconfig.nvim")
